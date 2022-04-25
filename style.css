@@ -1,6 +1,8 @@
 body {
     text-align: center !important;
     font-family: 'Megrim', cursive !important;
+    background-position: center;
+    background-size: cover;
  }    
 
      /* Style The Dropdown Button */
@@ -64,3 +66,17 @@ p {
 button {
   color: black !important;
 }
+
+#myCanvas
+  {
+      border-width:10px;
+      background-color: white; 
+      border-style:ridge;
+  }
+ input {
+   display: inline;
+ }
+
+ .canvasp {
+   display: inline;
+ }
