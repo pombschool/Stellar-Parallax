@@ -69,6 +69,7 @@ var last_position_of_x, last_position_of_y;
             ctx.beginPath();
             ctx.strokeStyle = color;
             ctx.lineWidth = width;
+            ctx.lineTo(current_position_of_mouse_x, current_position_of_mouse_y);
             ctx.stroke();
         }
         lastX = currentX;
