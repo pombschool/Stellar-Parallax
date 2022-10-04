@@ -18,7 +18,8 @@
 <body>
     <div id="mySidenav" class="sidenav" style="position: sticky; top: 0; z-index: 99999;">
         <a href="#" id="about" onclick="openNav()"> Open Menu</a>
-      </div>
+        <a href="#" id="topic" onclick="openTopics()"> Contents</a>
+    </div>
       <!-- The overlay -->
       <div id="myNav" class="overlay" style="z-index: 999999;">
 
@@ -30,7 +31,6 @@
             <span class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
               <h1>Main Menu</h1>
               <li><a href="">Science</a></li>
-              <li><a href="module.html">Module</a></li>
               <li><a href="credit.html">Credits</a></li>
             </span>
             <span class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
@@ -46,6 +46,32 @@
             <span class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
                 <h1>Administration</h1>
                 <li><a href="login.html">Login</a></li>
+            </span>
+        </div>
+      </div>
+      <!-- The overlay -->
+      <div id="myTopicNav" class="overlay" style="z-index: 999999;">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <div>
+                <span>
+                    <h1>Stellar Parallax Topics</h1>
+                </span>
+
+            </div>
+            <span class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <li><a href="module.html">Module</a> <label>Note: Topics can be accessed from this page as well. If you want a brief overview about each topic, then use the Module.</label></li>
+              <li><a href="distance.html">Distance</a></li>
+              <li><a href="luminosity.html">Luminosity</a></li>
+            </span>
+            <span class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <li><a href="temperature.html">Temperature</a></li>
+                <li><a href="mass.html">Mass</a></li>
+                <li><a href="radius.html">Radius</a></li>
             </span>
         </div>
       </div>

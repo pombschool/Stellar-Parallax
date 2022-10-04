@@ -15,45 +15,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar-inverse" style="position: sticky; top: 0; z-index: 99999;">
-        <div class="navbar-header ">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="" class="navbar-brand ">Home</a>
+  <div id="mySidenav" class="sidenav" style="position: sticky; top: 0; z-index: 99999;">
+    <a href="#" id="about" onclick="openNav()"> Open Menu</a>
+    <a href="#" id="topic" onclick="openTopics()"> Contents</a>
+</div>
+  <!-- The overlay -->
+  <div id="myNav" class="overlay" style="z-index: 999999;">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <span class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <h1>Main Menu</h1>
+          <li><a href="">Science</a></li>
+          <li><a href="index.html">Stellar Parallax</a></li>
+        </span>
+        <span class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <br><br><br><br><br><br><br><br>
+          <h1><a href="https://academyoffice79.github.io/Constellations/"> Related Topics</a></h1>
+        </span>
+        <span class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <h1>Subject Domains</h1>
+            <li><a href="">Math</a></li>
+            <li><a href="">Hindu</a></li>
+            <li><a href="">Science</a></li>
+        </span>
+        <span class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <h1>Administration</h1>
+            <li><a href="login.html">Login</a></li>
+        </span>
+    </div>
+  </div>
+  <!-- The overlay -->
+  <div id="myTopicNav" class="overlay" style="z-index: 999999;">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <div>
+            <span>
+                <h1>Stellar Parallax Topics</h1>
+            </span>
+
         </div>
-        <div class="collapse navbar-collapse " id="myNavbar" >
-            <ul class="nav navbar-nav">
-                <li><a href="#welcome">Science</a></li>
-                <li><a href="module.html">Module</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="index.html">Stellar Parallax</a></li>
-            </ul>
+        <span class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <li><a href="module.html">Module</a> <label>Note: Topics can be accessed from this page as well. If you want a brief overview about each topic, then use the Module.</label></li>
+          <li><a href="distance.html">Distance</a></li>
+          <li><a href="luminosity.html">Luminosity</a></li>
         </span>
-        <span class="dropdown">
-            <button class="dropbtn">Other Options</button>
-            <div class="dropdown-content">
-              <a href="">Math</a>
-              <a href="">Hindu Religion</a>
-              <a href=""></a>
-            </div>
-        </span> 
-        <span class="dropdown">
-            <button class="dropbtn"> Related Topics</button>
-            <div class="dropdown-content">
-              <a href="https://academyoffice79.github.io/Constellations/">Constellations: Real or trick of light?</a>
-            </div>
+        <span class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <li><a href="temperature.html">Temperature</a></li>
+            <li><a href="mass.html">Mass</a></li>
+            <li><a href="radius.html">Radius</a></li>
         </span>
-    </nav>
-    <center class="container">
-        <h2>Credits and Acknowledgements</h2>
-        <div class="flip-card col-lg-4 col-md-4 col-sm-4 col-xs-6">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h2 class="Title">Mrs. Donna Lee Goodwin</h2>
-              </div>
+    </div>
+  </div>
+  <label>To return to Stellar Parallax, go the Main Menu</label>
+  <center class="container">
+    <h2>Credits and Acknowledgements</h2>
+      <div class="flip-card col-lg-4 col-md-4 col-sm-4 col-xs-6">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h2 class="Title">Mrs. Donna Lee Goodwin</h2>
+          </div>
               <div class="flip-card-back">
                 <h1>Dodd Middle School, Cheshire, Ct</h1>
                 <p>

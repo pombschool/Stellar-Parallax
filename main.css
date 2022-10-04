@@ -139,7 +139,7 @@ body {
   top: 25%; /* 25% from the top */
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  margin: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 /* The navigation links inside the overlay */
@@ -199,6 +199,11 @@ body {
   background-color: #04AA6D;
 }
 
+#topic {
+  top: 90px;
+  background-color: #2196F3;
+}
+
 a {
   font-family: 'Petit Formal Script', cursive !important;
   color: deepskyblue !important;
@@ -224,4 +229,8 @@ a:hover {
   bottom: 50 !important;
   float: right;
   position: unset;
+}
+
+label {
+  color: orange;
 }
