@@ -1,58 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
-<title>Stellar Parallax</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet"> 
-<meta name="author" content="Sandhya Sudhamsu Srimathirumala Pallerlamudi">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Parallax</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Mr+De+Haviland&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <nav class="navbar-inverse" style="position: sticky; top: 0 !important; z-index: 9999;">
-        <div class="navbar-header ">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="" class="navbar-brand ">Science</a>
+    <div id="mySidenav" class="sidenav" style="position: sticky; top: 0; z-index: 99999;">
+        <a href="#" id="about" onclick="openNav()"> Open Menu</a>
+      </div>
+      <!-- The overlay -->
+      <div id="myNav" class="overlay" style="z-index: 999999;">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <span class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <h1>Main Menu</h1>
+              <li><a href="">Science</a></li>
+              <li><a href="module.html">Module</a></li>
+              <li><a href="credit.html">Credits</a></li>
+            </span>
+            <span class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                <br><br><br><br><br><br><br><br>
+              <h1><a href="https://academyoffice79.github.io/Constellations/"> Related Topics</a></h1>
+            </span>
+            <span class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                <h1>Subject Domains</h1>
+                <li><a href="">Math</a></li>
+                <li><a href="">Hindu</a></li>
+                <li><a href="">Science</a></li>
+            </span>
+            <span class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                <h1>Administration</h1>
+                <li><a href="login.html">Login</a></li>
+            </span>
         </div>
-        <div class="collapse navbar-collapse " id="myNavbar" >
-            <ul class="nav navbar-nav">
-                <li><a href="distance.html">Distance</a></li>
-                <li><a href="luminosity.html">Luminosity</a></li>
-                <li><a href="temperature.html">Temperature</a></li>
-                <li><a href="mass.html">Mass</a></li>
-                <li><a href="radius.html">Radius</a></li>
-            </ul>
-        </span>
-        <span class="dropdown">
-            <button class="dropbtn">Other Options</button>
-            <div class="dropdown-content">
-              <a href="works.html">Other works</a>
-              <a href="workscited.html">Works Cited</a>
-            </div>
-        </span> 
-    </nav>
+      </div>
     <div class="container">
-        <h1>Stellar Parallax</h1>
-        <h2>What is it?</h2>
-        <p>
-            Stellar parallax is a form of simple parallax. Parallax is a mixture of motion and light 
-            physics. It is the apparent displacement of an object due to the change of the viewers 
-            perspective. For example, think of a person standing in front a wall. As you moved your 
-            point of perspective, meaning you either bend or twist, the wall behind the person seems to 
-            move. This is apparent displacement, or displacement of something you can see. this is 
-            parallax. A better example would be what you see outside the car window Now, we take 
-            this concept of parallax and apply it to space. The basis of everthing scientists do 
-            with stellar parallax is based on distance in one way or the other. As of now there
-            two ways of finding distance. More on distance will come on the next page.
-        </p>
-        <br>
-        <button class="btn btn-danger"><a href="distance.html">Distance</a></button>
+        <center>
+            <h1>Stellar Parallax</h1>
+            <hr class="headSep">
+            <p>
+                Stellar parallax is a form of simple parallax. Parallax is a mixture of motion and light 
+                physics. It is the apparent displacement of an object due to the change of the viewers 
+                perspective. For example, think of a person standing in front a wall. As you moved your 
+                point of perspective, meaning you either bend or twist, the wall behind the person seems to move. This is apparent displacement, or displacement of something you can see. this is parallax. A better example would be what you see outside the car window Now, we take this concept of parallax and apply it to space. The basis of everthing scientists do with stellar parallax is based on distance in one way or the other. As of now there two ways of finding distance. More on distance will come on the next page.
+            </p>
+        </center>
+    </div>
+    <a href="credit.html" class="credit">Credits</a>
+    <div class="footer">
+        Developed by - Sandhya; Cooperated with Shreyas, Mrs.Goodwin, and Ms.Meenal
     </div>
 </body>
-<script src=”main.js”></script>
+<script src="chapters.js"></script>
+<script src="script.js"></script>
 </html>
