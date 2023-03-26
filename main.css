@@ -100,10 +100,16 @@ body {
     color: red;
     font-weight: bolder;
   }
-  hr {
+  .headSep {
     height: 8px !important;
     background-color: whitesmoke !important;
     border-top: 8px dashed red !important;
+  }
+
+  .topicSep {
+    height: 3px;
+    background-color: #00ffd5;
+    border: 3px groove deeppink;
   }
   
   .navbar-inverse {
@@ -206,12 +212,12 @@ body {
 
 a {
   font-family: 'Petit Formal Script', cursive !important;
-  color: deepskyblue !important;
-  font-weight: bolder !important;
+  color: blue !important;
+  font-weight: bold;
 }
 
 a:hover {
-  color: deeppink !important;
+  color: red !important;
 }
 
 .footer {
@@ -228,7 +234,7 @@ a:hover {
 .credit {
   bottom: 50 !important;
   float: right;
-  position: unset;
+  position: fixed;
 }
 
 label {
